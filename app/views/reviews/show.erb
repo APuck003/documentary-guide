@@ -1,1 +1,15 @@
-<%= @reviews.each{|review| review.content}%>
+<h1 style="color:#ba5a57;">Documentary Guide</h1>
+<style>
+    body {background-color: #b4d8ee	;}
+    a:link {color: #557d90	;}
+    a:visited {color: #557d90	;}
+</style>
+<% @reviews.each do |review| %>
+<h2><%= review.user.display_name %>:</h2>
+<h4 style{color:red}><%= review.rating %>/100</h4>
+<ul>
+   <p><%= review.content %><p>
+</ul>
+
+
+<% end%>
