@@ -5,4 +5,5 @@
 <h3>Director: <%= link_to @movie.director.name, directors_path(@movie.director) %></h3>
 <p><%= @movie.bio %><p>
 
-<%= button_to "Edit", @movie, method: :get %>
+<%= button_to "See Reviews", review_path(@movie.id), method: :get %>
+

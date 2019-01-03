@@ -4,7 +4,8 @@ class ReviewsController < ApplicationController
     end
     
     def show
-        @review = Review.find(params[:id])
+        @movie = Movie.find(params[:id])
+        @reviews = @movie.reviews
     end
 
     def create
