@@ -1,0 +1,13 @@
+<h1>Documentary Guide</h1>
+<style>
+    body {background-color: #d76144	;}
+    a:link {color: #dfceb9;}
+    a:visited {color: #dfceb9;}
+</style>
+<% @movie.each do |movie| %>
+  <div>
+    <%= link_to movie.title, movie_path(movie) %>
+  </div>
+<% end %>
+
+<p>Want to review a movie you don't see here? <%= link_to "Add Movie!", @user %><p>

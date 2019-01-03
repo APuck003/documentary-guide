@@ -1,0 +1,8 @@
+<style>body {background-color: coral;}</style>
+<%= link_to "Documentary Guide", movies_path %>
+<h1><%= @movie.title %></h1>
+<h4>(<%= @movie.year %>)</h4>
+<h3>Director: <%= link_to @movie.director.name, directors_path(@movie.director) %></h3>
+<p><%= @movie.bio %><p>
+
+<%= button_to "Edit", @movie, method: :get %>

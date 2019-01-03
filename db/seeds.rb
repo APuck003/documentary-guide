@@ -5,7 +5,9 @@ Director.create(name: "Ken Burns", country: "America", yob: 1953, bio: "Kenneth 
 Movie.create(title: "The Civil War", director: Director.third, year: 1990, bio: "bio text here")
 Movie.create(title: "The Vietnam War", director: Director.third, year: 2017, bio: "bio text here")
 Movie.create(title: "The Century of the Self", director: Director.second, year: 2002, bio: "bio text here")
-Movie.create(title: "Pandora's Box", director: Director.second, year: 1992, bio: "bio text here")
+Movie.create(title: "Pandora's Box", director: Director.second, year: 1992, bio: "Pandora's Box, subtitled A Fable From the Age of Science, is a BBC television documentary series by Adam Curtis looking at the consequences of political and technocratic rationalism. It won a BAFTA for Best Factual Series in 1993. 
+
+Curtis deals with, in order: Communism in the Soviet Union, systems analysis and game theory during the Cold War, economy of the United Kingdom during the 1970s, the insecticide DDT, Kwame Nkrumah's leadership in Ghana in the 1950s, and the history of nuclear power.")
 Movie.create(title: "Bitter Lake", director: Director.second, year: 2015, bio: "bio text here")
 Movie.create(title: "HyperNormalisation", director: Director.second, year: 2016, bio: "bio text here")
 Movie.create(title: "Cave of Forgotten Dreams", director: Director.first, year: 2010, bio: "bio text here")
