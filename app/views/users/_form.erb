@@ -1,0 +1,12 @@
+<%= form_with username: @user do |f| %>
+  <h3>Change Username</h3>
+  <%= f.text_field :username %><br>
+
+  <h3>Change Display Name</h3>
+  <%= f.text_field :display_name %><br>
+
+  <h3>Change Bio</h3>
+  <%= f.text_field :bio %><br>
+
+  <%= f.submit "Update User" %>
+<% end %>

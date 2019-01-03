@@ -1,0 +1,9 @@
+<h1>Users</h1>
+
+<% @users.each do |user| %>
+  <div>
+    <%= link_to user.display_name, user_path(user) %>
+  </div>
+<% end %>
+
+<%= button_to "Create New", @user %>
